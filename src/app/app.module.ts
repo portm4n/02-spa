@@ -16,6 +16,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,9 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
+    BuscadorComponent,
   ],
-  imports: [BrowserModule, APP_ROUTING],
+  imports: [BrowserModule, APP_ROUTING, FormsModule],
   providers: [HeroesService],
   bootstrap: [AppComponent],
 })
