@@ -77,7 +77,7 @@ export class HeroesService {
       let heroe = this.heroes[i];
       let nombre = heroe.nombre.toLowerCase();
       if (nombre.indexOf(termino) >= 0) {
-        heroe.idx = 1;
+        heroe.idx = i;
         heroesArr.push(heroe);
       }
     }
